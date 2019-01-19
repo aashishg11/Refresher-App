@@ -28,8 +28,6 @@ public abstract class LocationDatabase extends RoomDatabase {
 
     public abstract LocationDao locationDao();
 
-
-
     public static final String DATABASE_NAME = "locations.db";
 
     private final MutableLiveData<Boolean> mIsDatabaseCreated = new MutableLiveData<>();
