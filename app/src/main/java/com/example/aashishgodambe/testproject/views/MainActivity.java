@@ -29,9 +29,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.aashishgodambe.testproject.BasicApp;
 import com.example.aashishgodambe.testproject.R;
 import com.example.aashishgodambe.testproject.RecyclerTouchListener;
 import com.example.aashishgodambe.testproject.adapter.LocationAdapter;
+import com.example.aashishgodambe.testproject.db.LocationDatabase;
 import com.example.aashishgodambe.testproject.model.Location;
 import com.example.aashishgodambe.testproject.service.NotificationJobService;
 import com.example.aashishgodambe.testproject.viewmodel.MainActivityViewModel;
@@ -48,16 +50,17 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     private Toast mToast;
     private Snackbar snackbar;
     private DrawerLayout mDrawerLayout;
+    private LocationDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         button = findViewById(R.id.button);
         recyclerView = findViewById(R.id.recyclerView);
         mDrawerLayout = findViewById(R.id.drawer_layout);
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
