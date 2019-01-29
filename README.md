@@ -5,7 +5,7 @@ This is a practice app which has the widely used android components pieced toget
 - An Activity that displays a UI with ConstraintLayout.
 - Custom view class added to a layout with accessibility hooks
 - Bind local data to a RecyclerView list using the paging library
-- Implemented menu-based or drawer navigation
+- Implemented menu-based and drawer navigation
 - Displays notifications, toasts, and snackbar messages
 - Schedule a background task using JobScheduler
 - Efficiently run jobs in the background
